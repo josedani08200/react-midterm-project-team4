@@ -17,6 +17,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
+/********************************************************** 
+ Here is the BACK-END CODE
+***********************************************************/
+
+
 app.get('/api/restaurants/search/:location/:term', (request, response) => {
   const { location, term } = request.params
   const locationSearch = location ? `&location=${location}` : '';
@@ -29,6 +34,12 @@ app.get('/api/restaurants/search/:location/:term', (request, response) => {
   .then(yelpResponse => response.json(yelpResponse.data.businesses || []))
   .catch(err => response.send([]))
 })
+
+
+/*********************************************************
+ Here is the END of the BACK-END CODE
+ *********************************************************/
+
 
 // END DEMO
 
