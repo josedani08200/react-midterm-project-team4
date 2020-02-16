@@ -13,3 +13,17 @@
 } */
 
 /* END DEMO */
+
+#background-img {
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(./images/home.jpg);
+}
+
+#header-home {
+  font-family: galada;
+}
+
+//are you working
